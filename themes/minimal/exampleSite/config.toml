@@ -1,15 +1,15 @@
 baseURL = "http://example.com/"
 languageCode = "en-us"
-title = "Alex Costa"
+title = "Minimal"
 theme = "minimal"
 disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
-    author = "Alex Costa"
-    description = "Golang Gopher / AWS Lover / Human Dad / Husband"
+    author = "Calin Tataru"
+    description = "Personal blog theme powered by Hugo"
     githubUsername = "#"
-    accent = "Black"
+    accent = "red"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
