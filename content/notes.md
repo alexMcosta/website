@@ -11,5 +11,5 @@ Chances are if you stumbled on this you are either me, I pointer you here, or my
 ___
 
 ## AWS
-
+#### [EC2](/aws/ec2)
 
