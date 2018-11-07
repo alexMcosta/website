@@ -7,7 +7,7 @@ googleAnalytics = ""
 
 [params]
     author = "Alex Costa"
-    description = "Golang Gopher / AWS Lover / Human Dad / Husband"
+    description = "A site of my notes and stuff"
     githubUsername = "#"
     accent = "Black"
     showBorder = true
@@ -26,11 +26,6 @@ googleAnalytics = ""
     url = "/post/"
     name = "Posts"
     weight = 2
-
-[[menu.main]]
-    url = "/project/"
-    name = "Projects"
-    weight = 3
 
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
