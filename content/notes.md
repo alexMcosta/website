@@ -12,4 +12,5 @@ ___
 
 ## AWS
 #### [EC2](/aws/ec2)
-#### [EFS](/aws/ec2)
+#### [EFS](/aws/efs)
+#### [Lambda](/aws/lambda)
