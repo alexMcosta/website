@@ -15,6 +15,3 @@ ___
 #### [ECS](/aws/ecs)
 #### [Route 53](/aws/route53)
 #### [RDS](/aws/rds)
-#### [DynamoDB](/aws/dynamodb)
-#### [Redshift](/aws/redshift)
-#### [Elasticache](/aws/elasticache)
