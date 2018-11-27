@@ -1,7 +1,7 @@
 ---
 title: "RDS"
 date: 2018-11-27T14:05:39-08:00
-draft: true
+draft: False
 ---
 
 # RDS
@@ -34,8 +34,10 @@ RDS is AWS's relational database hosting service.
 * Stored even if RDS instance is deleted.
 
 ## Read Replica
-Will copy each WRITE to the database to a replica databases that are used solely for READ access. This spreads the stress from the main database since most traffic online is READ.
+Will copy each WRITE to the main database to replica databases that are used solely for READ access. This spreads the stress from the main database since most traffic online is READ.
+
 **NOTE** Can have 5 read replicas per production database by default.
+
 **NOTE** Not available for SQL Server or Oracle.
 
 ## Multi-AZ
