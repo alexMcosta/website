@@ -25,11 +25,6 @@ googleAnalytics = ""
     url = "/notes/"
     name = "Notes"
     weight = 2
-
-[[menu.main]]
-    url = "/about/"
-    name = "About"
-    weight = 3
     
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
