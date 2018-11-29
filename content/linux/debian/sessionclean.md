@@ -31,34 +31,24 @@ The sessionclean file at the time of this writing is located on my Ubuntu box at
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
 # FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 # COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-"/usr/lib/php/sessionclean" [readonly] 58L, 2922C             6,1           Top
-#!/bin/sh -e
-#
-# sessionclean - a script to cleanup stale PHP sessions
-#
-# Copyright 2013-2015 Ondřej Surý <ondrej@sury.org>
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy oo
-f
-# this software and associated documentation files (the "Software"), to deal in
-# the Software without restriction, including without limitation the rights to
-# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of
-# the Software, and to permit persons to whom the Software is furnished to do soo
-,
-# subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNEE
-SS
-# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-                                                              6,1           Top
-cat@schrodingersbox:/var/lib/php/modules/7.2/apache2$ cd ../cli/
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+SAPIS="apache2:apache2 apache2filter:apache2 cgi:php@VERSION@ fpm:php-fpm@VERSION@ cli:php@VERSION@"
+
+# Iterate through all web SAPIs
+(
+proc_names=""
+for version in $(/usr/sbin/phpquery -V); do
+    for sapi in ${SAPIS}; do
+        conf_dir=${sapi%%:*}
+        proc_name=${sapi##*:}
+        if [ -e /etc/php/${version}/${conf_dir}/php.ini ]; then
+            # Get all session variables once so we don't need to start PHP to get each config option
+            session_config=$(PHP_INI_SCAN_DIR=/etc/php/${version}/${conf_dir}/conf.d/ php${version} -c /etc/php/${version}/${conf_dir}/php.ini -d "error_reporting='~E_ALL'" -r 'foreach(ini_get_all("session") as $k => $v) echo "$k=".$v["l$
+            save_handler=$(echo "$session_config" | sed -ne 's/^session\.save_handler=\(.*\)$/\1/p')
+            save_path=$(echo "$session_config" | sed -ne 's/^session\.save_path=\(.*;\)\?\(.*\)$/\2/p')
+            gc_maxlifetime=$(($(echo "$session_config" | sed -ne 's/^session\.gc_maxlifetime=\(.*\)$/\1/p')/60))
 
             if [ "$save_handler" = "files" -a -d "$save_path" ]; then
                 proc_names="$proc_names $(echo "$proc_name" | sed -e "s,@VERSION@,$version,")";
@@ -78,6 +68,6 @@ done ) | \
         find -O3 "$save_path/" -ignore_readdir_race -depth -mindepth 1 -name 'sess_*' -type f -cmin "+$gc_maxlifetime" -delete
     done
 
-exit 0
+exit 0            
 ```
 
