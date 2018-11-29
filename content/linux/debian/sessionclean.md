@@ -1,7 +1,7 @@
 ---
-title: "Sessionclean"
+title: "sessionclean"
 date: 2018-11-29T08:57:58-08:00
-draft: true
+draft: false
 ---
 
 # `sessionclean`
