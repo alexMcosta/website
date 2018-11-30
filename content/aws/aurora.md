@@ -1,7 +1,7 @@
 ---
 title: "Aurora"
 date: 2018-11-30T15:20:33-08:00
-draft: true
+draft: false
 ---
 
 # Aurora
