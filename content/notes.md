@@ -16,6 +16,7 @@ ___
 #### [Route 53](/aws/route53)
 #### [RDS](/aws/rds)
 #### [Aurora](/aws/aurora)
+#### [SQS](/aws/SQS)
 
 ## Linux
 ### Debian
