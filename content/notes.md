@@ -15,8 +15,9 @@ ___
 #### [ECS](/aws/ecs)
 #### [Route 53](/aws/route53)
 #### [RDS](/aws/rds)
-#### [SQS](/aws/sqs)
 #### [Aurora](/aws/aurora)
+#### [SQS](/aws/sqs)
+#### [SQS](/aws/swf)
 
 ## Linux
 ### Debian
