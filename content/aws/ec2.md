@@ -29,4 +29,3 @@ These are the "P", "G", and "F" instances. They are best used for GPU intensive 
 
 #### **Storage Optimized**
 These are the "F", "I", and "D" instances. They balance both high disk storage and competitions for running data processing applications.
-

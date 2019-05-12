@@ -17,7 +17,7 @@ ___
 #### [RDS](/aws/rds)
 #### [Aurora](/aws/aurora)
 #### [SQS](/aws/sqs)
-#### [SQS](/aws/swf)
+#### [SWF](/aws/swf)
 
 ## Linux
 ### Debian
