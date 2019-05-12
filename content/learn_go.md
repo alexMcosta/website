@@ -15,8 +15,36 @@ If you have Slack and are looking for a great place to talk to other Gophers the
 
 If you like Podcasts then I also highly recommend this one, [Go Time](https://changelog.com/gotime) 
 
-### Why Golang
+___
 
+## Why Golang
+
+Golang is a fantastically simple programming language that is very powerful. Like the game with the same name it seems simple and elegant in execution, however, it is complex. Below are a list of videos of how people feel about this language.
+
+### The Go Team
+
+#### Why Golang is Successful
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cQ7STILAS0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### The Evolution of Go
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ReKdcpNyQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### A Tour of Go
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytEkHepK08c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Meet the Go Team
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sln-gJaURzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### My Journey to Go
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6sBBTFXOq44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+___
+
+## Tutorials
+
+### [Learn Go With Tests](https://quii.gitbook.io/learn-go-with-tests/)
+
+### [Build a Web Application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/)
 
 
 
