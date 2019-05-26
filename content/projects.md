@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-date: 2019-05-12
+date: 2019-05-26
 draft: False
 ---
 
@@ -21,6 +21,22 @@ Narkwhal is a CLI that goes through an AWS account and removes parked EBS volume
 - Ability to select which volumes to delete not just all that match params.
 - Ability to take a `.yaml` file that holds configuration so it can run as a cron job.
 - Notify admins of volume deletion.
-- Ability to tag a volume to be ignored by Narkwhal for X amount of time.
+- Ability to tag a volume to be ignored by Narkwhal for X amount of times.
+
+___
+
+## [Gatfish](https://github.com/alexMcosta/gatfish)
+
+Gatfish is a program that that governs AWS resource's tags based on the level of requirements that are needed. Gatfish can handle multiple different AWS accounts as long as Gatfish is ran with access to the `.aws/accounts` file.
+
+At this time Gatfish is currently in development with the following features being on the MVP:
+
+- Ability to take multiple accounts
+- `ALL` setting that will enforce whatever level wanted on all resources
+- `DIRE` tag setting that will immediately terminate a resource if the tag is not on the resource. It will output this to some logs
+- `REQUIRED` tag setting that will stop the resource if it is able. and output the resource ID to the logs.
+- `WANTED` tag setting that will only output to logs that the resource was not tagged.
+- `AUTO` tag setting will auto add a tag to a resource if it can find the tag.
+- Results will be exported in two formats. `JSON` and a human readable `.txt` file that will also come with stats such as percentage of resources that do not meet the requirements as well as the biggest culprits by gathering information from Cloudtrail. 
 
 ___
