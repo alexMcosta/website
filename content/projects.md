@@ -9,6 +9,8 @@ ___
 
 ## [Narkwhal](https://github.com/alexMcosta/narkwhal)
 
+![alt-text](https://i.pinimg.com/originals/74/68/f1/7468f1d665e551fad8eac0c9f97977e3.jpg)
+
 Narkwhal is a CLI that goes through an AWS account and removes parked EBS volumes based on user specified criteria. 
 
 ### Current Features:
@@ -26,6 +28,8 @@ Narkwhal is a CLI that goes through an AWS account and removes parked EBS volume
 ___
 
 ## [Gatfish](https://github.com/alexMcosta/gatfish)
+
+![alt-text](https://cdn.drawception.com/images/panels/2015/1-5/PChhFFR6ym-8.png)
 
 Gatfish is a program that that governs AWS resource's tags based on the level of requirements that are needed. Gatfish can handle multiple different AWS accounts as long as Gatfish is ran with access to the `.aws/accounts` file.
 
