@@ -18,6 +18,8 @@ ___
 #### [Aurora](/aws/aurora)
 #### [SQS](/aws/sqs)
 #### [SWF](/aws/swf)
+#### [S3](/aws/s3)
+#### [Glacier](/aws/glacier)
 
 ## Linux
 ### Debian
