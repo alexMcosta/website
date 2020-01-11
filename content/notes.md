@@ -1,6 +1,6 @@
 ---
 title: "Notes"
-date: 2018-01-03T15:07:51-08:00
+date: 2020-01-10T15:07:51-08:00
 draft: False
 ---
 
@@ -20,6 +20,8 @@ ___
 #### [SWF](/aws/swf)
 #### [S3](/aws/s3)
 #### [Glacier](/aws/glacier)
+#### [EFS](/aws/efs)
+#### [EBS](/aws/ebs)
 
 ## Linux
 ### Debian
