@@ -6,7 +6,7 @@ googleAnalytics = ""
 
 [params]
     author = "Alex Costa"
-    description = "Golang / AWS / Linux / Infosec"
+    description = "Golang Developer & Cloud Architect"
     githubUsername = "alexMcosta"
     accent = "Maroon"
     showBorder = true
